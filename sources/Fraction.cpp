@@ -120,11 +120,11 @@ namespace ariel
     bool operator<=(const float num1, const Fraction& fraction1){return false;}
 
     // prefix
-    // Fraction& Fraction::operator++(){}
+    Fraction& Fraction::operator++(){return *this;}
     // postfix
     Fraction Fraction::operator++(int){return Fraction(1,1);}
     // prefix
-    // Fraction& Fraction::operator--(){}
+    Fraction& Fraction::operator--(){return *this;}
     // postfix
     Fraction Fraction::operator--(int){return Fraction(1,1);}
     //check this is right !!!!
